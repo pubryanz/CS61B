@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47b4301b-174a-47e9-ac28-d7d3b2579862" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/lab1/.idea/lab1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2/IntList/IntListExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/IntList/IntListExercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab2/IntList/SquarePrimesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/IntList/SquarePrimesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="47b4301b-174a-47e9-ac28-d7d3b2579862" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

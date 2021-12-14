@@ -31,10 +31,20 @@ public class AList<Item> {
         items = a;
     }
 
-    /** Inserts X into the back of the list. */
+//    /** Inserts X into the back of the list. */
+//    public void addLast(Item x) {
+//        if (size == items.length) {
+//            resize(size + 1);
+//        }
+//
+//        items[size] = x;
+//        size = size + 1;
+//    }
     public void addLast(Item x) {
+        double factor = 1.01;
         if (size == items.length) {
-            resize(size + 1);
+            int newSize = (int)Math.round(size*factor);
+            resize(newSize);
         }
 
         items[size] = x;

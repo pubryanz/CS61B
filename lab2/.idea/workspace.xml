@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888175cb-8f4b-4503-9257-f17c5438d0ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab1/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab1/out/production/lab1/.idea/lab1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntList/IntListExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntList/IntListExercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IntList/SquarePrimesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/IntList/SquarePrimesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../proj0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proj0/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
