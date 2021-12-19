@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="888175cb-8f4b-4503-9257-f17c5438d0ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/libraries/algs41.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/libraries/hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/libraries/jh61b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/libraries/stdlib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/libraries/stdlib_package.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/libraries/ucb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab3/.idea/libraries/xchart_3_5_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/randomizedtest/BuggyAList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/randomizedtest/BuggyAList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/randomizedtest/TestBuggyAList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/randomizedtest/TestBuggyAList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/target/classes/randomizedtest/BuggyAList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/target/classes/randomizedtest/BuggyAList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/target/classes/randomizedtest/TestBuggyAList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/target/classes/randomizedtest/TestBuggyAList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +200,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
