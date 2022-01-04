@@ -1,6 +1,8 @@
 package deque;
 
-public class LinkedListDeque<T> {
+import java.util.Iterator;
+
+public class LinkedListDeque<T> implements Iterable<T> {
 
     /* nested class for TypeNode, the node can be for any type. */
     private class TypeNode {
@@ -30,10 +32,16 @@ public class LinkedListDeque<T> {
     }
 
     public void addFirst(T x) {
-        TypeNode currFirst = sentF.next;
-        TypeNode newNode = new TypeNode(sentF, x, currFirst);
+//        /*method 1: use a new node currNode for switching */
+//        TypeNode currFirst = sentF.next;
+//        TypeNode newNode = new TypeNode(sentF, x, currFirst);
+//        sentF.next = newNode;
+//        currFirst.prev = newNode;
+//        size += 1;
+        /* method 2: no need to generate a new TypeNode just for switch */
+        TypeNode newNode = new TypeNode(sentF, x, sentF.next);
+        sentF.next.prev = newNode;
         sentF.next = newNode;
-        currFirst.prev = newNode;
         size += 1;
     }
 
@@ -42,9 +50,15 @@ public class LinkedListDeque<T> {
     }
 
     public void addLast(T x) {
-        TypeNode currNode = sentB.prev;
-        TypeNode newNode = new TypeNode(currNode, x, sentB);
-        currNode.next = newNode;
+//        /*method 1: use a currNode for switching */
+//        TypeNode currNode = sentB.prev;
+//        TypeNode newNode = new TypeNode(currNode, x, sentB);
+//        currNode.next = newNode;
+//        sentB.prev = newNode;
+//        size += 1;
+        /*Method 2: no need for a currNode */
+        TypeNode newNode = new TypeNode(sentB.prev, x, sentB);
+        sentB.prev.next = newNode;
         sentB.prev = newNode;
         size += 1;
     }
@@ -101,10 +115,10 @@ public class LinkedListDeque<T> {
     public T get(int index) {
         if (size == 0) {
             return null;
-        } else if (size < index) {
+        } else if (size <= index) {
             return null;
         } else {
-            TypeNode currNode = sentF.next;
+            TypeNode currNode = sentF.next; /* Node at position 0 */
             for (int i = 0; i < index; i++) {
                 currNode = currNode.next;
             }
@@ -112,13 +126,87 @@ public class LinkedListDeque<T> {
         }
     }
 
+    public Iterator<T> iterator() {
+        return new LLDequeIterator();
+    }
+
+    private class LLDequeIterator implements Iterator<T> {
+        private int wizPos;
+        private LLDequeIterator() {
+            wizPos = 0;
+        }
+
+        public boolean hasNext() {
+            return wizPos < size;
+        }
+
+        public T next() {
+            T returnItem = get(wizPos);
+            wizPos += 1;
+            return returnItem;
+        }
+    }
+
+    public boolean equals(Object o) {
+        if (o == null) {
+            return false;
+        }
+        if (o == this) {
+            return true;
+        }
+        if (!(o instanceof LinkedListDeque)) {
+            return false;
+        }
+
+        LinkedListDeque<T> copyO = (LinkedListDeque<T>) o; /*change o type to LinkedListDeque */
+        if (copyO.size() != size) {
+            return false;
+        }
+
+        for (int i = 0; i < size; i += 1) {
+            if (get(i) != copyO.get(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public T getRecursive(int index) {
+        if (size == 0) {
+            return null;
+        } else if (index >= size) {
+            return null;
+        } else {
+            return getRecursiveHelper(index, sentF.next);
+        }
+    }
+
+    private T getRecursiveHelper(int index, TypeNode t) {
+        if (index == 0) {
+            return t.item;
+        }
+        return getRecursiveHelper(index - 1, t.next);
+    }
+
     public static void main(String[] args) {
         LinkedListDeque<Integer> L = new LinkedListDeque<>();
+//        L.printDeque();
         L.addFirst(10);
         L.addLast(15);
         L.addLast(20);
         L.addFirst(5);
-        System.out.println(L.get(3));
+        System.out.println(L.getRecursive(2));
+//        for (int s : L) {
+//            System.out.println(s);
+//        }
+        LinkedListDeque<Integer> L1 = new LinkedListDeque<>();
+//        L.printDeque();
+        L1.addFirst(10);
+        L1.addLast(15);
+        L1.addLast(20);
+//        L1.addFirst(5);
+//        System.out.println(L.equals(L1));
+//        System.out.println(L.get(4));
 //        System.out.println(L.getFirst());
 //        System.out.println(L.getLast());
 //        System.out.println(L.size());
