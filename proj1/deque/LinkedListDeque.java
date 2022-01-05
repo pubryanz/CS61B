@@ -2,7 +2,7 @@ package deque;
 
 import java.util.Iterator;
 
-public class LinkedListDeque<T> implements Iterable<T> {
+public class LinkedListDeque<T> implements Deque<T>, Iterable<T> {
 
     /* nested class for TypeNode, the node can be for any type. */
     private class TypeNode {
@@ -71,9 +71,9 @@ public class LinkedListDeque<T> implements Iterable<T> {
         return size;
     }
 
-    public boolean isEmpty() {
-        return size == 0;
-    }
+//    public boolean isEmpty() {
+//        return size == 0;
+//    }
 
     public void printDeque() {
         TypeNode currNode = sentF.next;
